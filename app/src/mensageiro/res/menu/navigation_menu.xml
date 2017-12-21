@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp1">
+
+        <item
+            android:id="@+id/nav_my_addresses"
+            android:icon="@mipmap/ic_address"
+            android:title="@string/my_addresses" />
+    </group>
+
+    <group android:id="@+id/grp2">
+
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@mipmap/ic_sair"
+            android:title="@string/logout" />
+
+    </group>
+
+
+</menu>

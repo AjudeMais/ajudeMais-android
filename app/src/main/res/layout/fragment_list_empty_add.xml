@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFont">
+
+
+    <ImageView
+        android:id="@+id/imgEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:contentDescription="@string/brandLogoApp"
+        android:src="@drawable/img_no_item_agendado" />
+
+    <TextView
+        android:id="@+id/tv_empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgEmptyList"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:textSize="@dimen/fontDefaultMain"
+        android:text="@string/add_disponibilidade"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_empty_text_sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/tv_empty_text"
+        android:text="@string/not_disponibilidade"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
+
+

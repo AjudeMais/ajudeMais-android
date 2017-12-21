@@ -1,0 +1,37 @@
+<resources>
+    <!--Tela login-->
+    <string name="hitUserName">Nome do usuário</string>
+    <string name="hitName">Nome</string>
+
+    <string name="btnCreateNewAccount">CRIAR CONTA</string>
+    <string name="btnEditAccount">ALTERAR SENHA</string>
+
+    <string name="newAccountActivity">Nova Conta</string>
+    <string name="editAccount">Editar Conta</string>
+
+    <string name="separatorBtnsLogin">Ou</string>
+
+    <!--Tela Criar Conta Doador sem rede social-->
+    <string name="hitPhone">Celular</string>
+    <string name="hitPassword">Senha</string>
+    <string name="hitConfirmationPassword">Confirmação da senha</string>
+    <string name="hitEmail">E-mail</string>
+    <string name="hitPasswordAlterar">Senha atual</string>
+    <string name="hitNewPasswordAlterar">Nova Senha</string>
+
+    <string name="cancelOperation">"Operação cancelada"</string>
+    <string name="donativos">CAMPANHAS</string>
+    <string name="lista_de_itens_do_veis">Itens que podem ser doados</string>
+    <string name="errorOnLogin">Falha ao tentar efetuar login</string>
+
+    <string name="visualizar">Visualizar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Informações Gerais</string>
+    <string name="instituicaoName">Instituição</string>
+    <string name="descricao">Descrição</string>
+    <string name="camapanhaTime">Término da campanha</string>
+    <string name="about_inst">Sobre</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/grp2">
+
+        <item
+            android:id="@+id/nav_notificacoes"
+            android:icon="@mipmap/ic_notify"
+            android:title="Notificações" />
+
+        <item
+            android:id="@+id/nav_config"
+            android:icon="@mipmap/ic_settings"
+            android:title="@string/config" />
+
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@mipmap/ic_exit"
+            android:title="Sair" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.edu.ifpb.ajudemais.activities.ConfirmDoacaoActivity">
+
+    <LinearLayout
+        android:id="@+id/componenteActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/componenteActionBar"
+        android:background="@color/colorFont"
+        android:descendantFocusability="beforeDescendants"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvInformationDonativo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/componenteActionBar"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/donativo_information"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontDefaultMain"
+                android:textStyle="bold"
+                tools:ignore="NotSibling,RtlHardcoded" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardDetalhesDonativo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvInformationDonativo"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="7dp">
+
+                <LinearLayout
+                    android:id="@+id/componentText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_donative_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Camisa Masculina"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textSecond"
+                        android:textSize="@dimen/fontDefaultMain"
+                        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
+
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="12 peças masculinas para doar"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textSize="@dimen/fontDefaultSubText2"
+                        tools:ignore="HardcodedText,RtlHardcoded" />
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardPhotoAndCategoria"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardDetalhesDonativo"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:id="@+id/componentPhotoAndCategoria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:layout_marginTop="9dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_categoria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:text="Categoria: Roupas"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textSecond"
+                        android:textSize="@dimen/fontDefaultMain"
+                        tools:ignore="HardcodedText,InefficientWeight,RtlHardcoded" />
+
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvEnderecoColeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/cardPhotoAndCategoria"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/endereco_for_coleta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontDefaultMain"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/componentAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvEnderecoColeta"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="7dp">
+
+                <LinearLayout
+                    android:id="@+id/cardEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="4dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/cardview_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:contentDescription="@string/icon_map"
+                        android:src="@drawable/ic_location"
+                        tools:ignore="ObsoleteLayoutParam" />
+
+                    <LinearLayout
+                        android:id="@+id/componentText4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_logradouro_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/textSecond"
+                            android:textSize="@dimen/fontDefaultMain"
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/componentText2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_bairro"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/textSecond"
+                                android:textSize="@dimen/fontDefaultSubText2"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textColor="@color/textSecond"
+                                android:textSize="@dimen/fontDefaultSubText2" />
+
+                            <TextView
+                                android:id="@+id/tv_cep_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="@dimen/fontDefaultSubText2" />
+
+                            <TextView
+                                android:id="@+id/tv_city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="@dimen/fontDefaultSubText2"
+                                />
+
+                            <TextView
+                                android:id="@+id/tv_uf_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="3dp"
+                                android:paddingRight="3dp"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="@dimen/fontDefaultSubText2" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tvInformationAgenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/componentAddress"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/DisponibilidadesForColeta"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontDefaultMain"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded" />
+
+            <Button
+                android:id="@+id/btn_lista_disponibilidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvInformationAgenda"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/textSecond"
+                android:background="@color/btnTransparente"
+                android:text="@string/visualizarDisponibilizades"
+                android:textSize="@dimen/fontDefaultMain" />
+
+
+            <Button
+                android:id="@+id/btnDoar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="12dp"
+                android:height="@dimen/LagHeigth"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/btnDoar"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/fontLogin" />
+
+
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

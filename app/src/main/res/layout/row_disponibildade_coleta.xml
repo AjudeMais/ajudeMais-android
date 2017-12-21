@@ -1,0 +1,48 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view_main_campanha"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_row_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:text="@string/exampleData"
+            android:textColor="@color/textSecond"
+            android:textSize="18sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage" />
+
+        <TextView
+            android:id="@+id/tv_row_campanha_termino_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_row_data"
+            android:maxLines="3"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:text="@string/exampleHorarioColeta"
+            android:textColor="@color/textSecond"
+            android:textSize="14sp"
+            tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

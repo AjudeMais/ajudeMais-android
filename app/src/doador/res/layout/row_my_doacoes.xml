@@ -1,0 +1,102 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/card_view_main_"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/appbar"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:id="@+id/cardDoacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imagem_donativo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:contentDescription="@string/profileDescription"
+            android:src="@drawable/no_image"
+            app:civ_border_color="@color/colorPrimaryDark" />
+
+        <LinearLayout
+            android:id="@+id/componentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            card_view:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/tv_donative_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Camisa Teste"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/textSecond"
+                android:textSize="@dimen/fontDefaultMain"
+                android:textStyle="bold"
+                card_view:ignore="HardcodedText,InefficientWeight,RtlHardcoded,RtlSymmetry" />
+
+
+            <LinearLayout
+                android:id="@+id/componentText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="2dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name_instituicao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="18"
+                    android:paddingLeft="3dp"
+                    android:text="ONG AJUDE MAIS"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/textSecond"
+                    android:textSize="@dimen/fontDefaultSubText"
+                    card_view:ignore="HardcodedText,RtlHardcoded,RtlSymmetry" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_donative_estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:paddingLeft="9dp"
+                        android:paddingRight="9dp"
+                        android:text="@string/disponibilizado"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textSecond"
+                        android:textSize="@dimen/fontDefaultSubText4"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">Ajude Mais</string>
+    <string name="screenRecoveryPassword">Esqueceu a senha</string>
+
+    <string name="open">Abrir</string>
+    <string name="close">Fechar</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_teste">Teste</string>
+    <string name="userNameTemp">Nome do Usuário</string>
+    <string name="userMailTemp">example@gmail.com</string>
+    <string name="profileDescription">Foto do Perfil</string>
+
+
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <!--Tela login-->
+    <string name="hitUserName">Nome de usuário</string>
+    <string name="hitPassword">Senha</string>
+    <string name="BtnOpenApp">ENTRAR</string>
+    <string name="lbForgotPassword">Esqueceu a senha?</string>
+    <string name="recoveryPasswordActivity">Esqueceu a senha</string>
+
+    <string name="facebook">FACEBOOK</string>
+    <string name="brandLogoApp">Logo do Ajude Mais</string>
+    <string name="msgPhoneNotCompleted">Complete o número do celular</string>
+
+    <string name="msgNameNotInformed">O nome deve ser informado.</string>
+    <string name="msgUserNameNotInformed">O nome do usuário deve ser informado.</string>
+    <string name="msgPasswordNotInformed">A senha do usuário deve ser informada.</string>
+    <string name="msgPhoneNotInformed">O Celular deve ser informado.</string>
+    <string name="msgEmailNotInformed">O e-mail deve ser informado.</string>
+    <string name="msgEmailNotValid">E-mail inválido.</string>
+    <string name="msgConfirmPasswordNotInformed">A confirmação da senha deve ser informada.</string>
+    <string name="msgPermitionUsingGPs">Para carregar as donativos e instituições de acordo com sua localidade é necessário a permissão do uso de sua localização</string>
+    <string name="msgPermitionTurnOnGPs">Para carregar as donativos e instituições de acordo com sua localidade é necessário a ativação do GPS</string>
+    <string name="permission">Permissão</string>
+    <string name="permissionDenied">"Permissão para localização negada."</string>
+    <string name="permissionDeniedAccessCamera">"Permissão para acesso a camêra negada."</string>
+
+    <string name="disconnected">Desconectado, por favor ligue o GPS</string>
+    <string name="failConnect">Não existe conexão com a internet</string>
+
+
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+
+    <string name="msgInvalideEmail">Informe um e-mail válido.</string>
+
+    <string name="msgInvalidePassword">A senha deve conte no mínimo 6 caracteres.</string>
+    <string name="msgInvalideUserName">Nome do usuário deve conte no mínimo 4 caracteres.</string>
+    <string name="msgPasswordAndConfirmPasswordDoesNotMatch">As senhas não conferem.</string>
+
+    <string name="imageSelect">Selecione uma opção para carregar a foto.</string>
+    <string name="msgDialogLoading">Por favor, aguarde…</string>
+    <string name="hitEmail">E-mail</string>
+
+    <!--Tela Esqueceu a senha sem rede social-->
+    <string name="btnRecoveryPasswordName">REDEFINIR</string>
+
+    <string name="facebook_app_id">137692430207752</string>
+    <string name="fb_login_protocol_scheme">fb137692430207752</string>
+
+    <!--Detalhe intituição-->
+    <string name="tv_inf_instituicao">Ajude Esta Instituição com:</string>
+    <string name="no_internet">Sem conexão</string>
+    <string name="no_internet_connection">Sem conexão, verifique sua conexão com a internet e tente novamente.</string>
+    <string name="action_search">pesquisar</string>
+    <string name="search_hint">digite para buscar</string>
+    <string name="empty_list">OPS</string>
+    <string name="text_empty_sec">Não existe nenhuma informação para ser mostrada</string>
+    <string name="no_connection">imagem representa sem conexão com a internet</string>
+    <string name="no_connect_sec">Verifique sua conexão com a internet e tente novamente</string>
+    <string name="hitName">Nome</string>
+    <string name="hitMotivo">Descreva o motivo</string>
+    <string name="hitPhone">Número de telefone</string>
+    <string name="hitConfirmationPassword">Confirme a senha</string>
+    <string name="btnCreateNewAccount">CRIAR CONTA</string>
+    <string name="hitCpf">CPF</string>
+    <string name="msgCpfNotInformed">CPF deve ser informado</string>
+    <string name="change_password_title">Alterar Senha</string>
+    <string name="btn_change_password">ALTERAR SENHA</string>
+    <string name="btn_edit">EDITAR</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="loading">Carregando...</string>
+    <string name="camera_action">Selecionar Foto</string>
+    <string name="TakePhoto">Tirar Foto</string>
+    <string name="selectPhoto">Selcione uma opção</string>
+    <string name="gallery">Galeria</string>
+    <string name="NegativePermisionMsg">Permissão de acesso a camêra negada</string>
+
+    <string name="btnEditAccount">ATUALIZAR CONTA</string>
+    <string name="personalInfo">Informações Pessoais</string>
+    <string name="lblMsgName">Nome do Mensageiro</string>
+    <string name="lblUsername">Nome de Usuário</string>
+    <string name="lblcpfmsg">CPF</string>
+    <string name="lblNumPhone">Número de telefone</string>
+    <string name="lblMail">Endereço de e-mail</string>
+    <string name="updatedImage">Imagem Atualizada atualizada com sucesso.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hitEnderecos">Endereços</string>
+    <string name="btn_cadastrar_endereco">Adicionar</string>
+    <string name="hitCep">CEP</string>
+    <string name="hitNumero">Número</string>
+    <string name="hitBairro">Bairro</string>
+    <string name="hitLogradouro">Logradouro</string>
+    <string name="hitUf">UF</string>
+    <string name="hitLocalidade">Localidade</string>
+
+    <string name="mgsCepEmpty">Informe um cep</string>
+    <string name="mgsNumeroEmpty">Informe um numero</string>
+    <string name="mgsBairroEmpty">Informe um bairro</string>
+    <string name="mgsLogradouroEmpty">Informe um logradouro</string>
+    <string name="mgsUfEmpty">Informe a uf do estado</string>
+    <string name="hitComplemento">Complemento</string>
+    <string name="msgEmptyCep">CEP deve ser informado</string>
+    <string name="msgEmptyLogradouro">Logradouro deve ser informado</string>
+    <string name="msgEmptyNumero">Número deve ser informado</string>
+    <string name="msgEmptyBairro">Bairro deve ser informado</string>
+    <string name="msgEmptyLocalidade">Localidade deve ser informada</string>
+    <string name="msgCpfInvalid">Número de CPF inválido</string>
+    <string name="mensageiroUpdated">Mensageiro atualizado com sucesso</string>
+    <string name="myaddress">Meus Endereços</string>
+    <string name="updatedAddress">"Endereço atualizado."</string>
+    <string name="createdAddress">Endereço criado.</string>
+    <string name="tv_edit">Editar</string>
+    <string name="tv_delete">Remover</string>
+    <string name="selectOption">Selecione uma opção</string>
+    <string name="deletedAddress">Endereço removido.</string>
+    <string name="btn_atualizar_conta">ATUALIZAR</string>
+    <string name="my_addresses">Meus Endereços</string>
+    <string name="minhas_coletas">Minhas Coletas</string>
+    <string name="my_notifications">Notificações</string>
+    <string name="account_settings">Configuraçẽs da conta</string>
+    <string name="logout">Sair</string>
+    <string name="selectOptinForNewAddress">Selecione para cadastrar um novo endereço</string>
+    <string name="tv_my_location">Usar minha localização</string>
+    <string name="tv_insert_manualy">Cadastrar Outro Endereço</string>
+    <string name="msgEmptyUf">A UF deve  ser informada</string>
+    <string name="msgFormatUfInvalide">A UF deve conter apenas dois caracteres ex. PB</string>
+    <string name="msgFormatCepInvalide">CEP inválido</string>
+    <string name="config">Configurações</string>
+    <string name="facebookProfile">Foto de Perfil do Facebook</string>
+    <string name="Informationupdated">Informações atualizadas.</string>
+    <string name="passwordLengthNotPermission">A nova senha informada deve contém no mínimo 6 caracteres</string>
+    <string name="errorNotCallPhone">Não foi possível realizar a ligação</string>
+    <string name="imageUpdated">Foto atualizada com sucesso.</string>
+    <string name="updatedInformation">Suas informações foram atualizadas</string>
+    <string name="passwordUpdated">Senha atualizada com sucesso, faça login novamente.</string>
+
+    <string name="hitDescribe">Descrição</string>
+    <string name="btnDoar">DOAR</string>
+    <string name="images_do_item">Adicione imagens do donativo</string>
+    <string name="endereco_for_coleta">Endereço para Coleta</string>
+    <string name="btnMyLocation">Usar Minha Localização</string>
+    <string name="btnAddAddress">ADICIONAR ENDEREÇO</string>
+    <string name="end_hour">Hora fim</string>
+    <string name="initial_hour">Hora inicial</string>
+    <string name="hitDataColeta">Data para coleta</string>
+    <string name="btnAddDateColeta">AGENDAR COLETA</string>
+    <string name="btnkeep">PRÓXIMO</string>
+    <string name="newDonor">Nova Doação</string>
+    <string name="msgDescriptionNotInformed">Uma breve descrição do donativo deve ser informada</string>
+    <string name="remove">Remover Image</string>
+    <string name="removeAddress">Remover</string>
+
+    <string name="contact">Contato</string>
+    <string name="exampleData">27/04/2017</string>
+    <string name="exampleHorarioColeta">disponibilidade das 14:00h às 16:00</string>
+    <string name="Agedamento_para_Coleta">Agendamento para Coleta</string>
+    <string name="data_not_informed">A data para coleta deve ser informada.</string>
+    <string name="initial_hour_not_informed">A hora de inicio do intervalo de disponibilidade para coleta deve ser informada</string>
+    <string name="end_hour_not_informed">A hora de fim do intervalo de disoponibilidade deve ser informado</string>
+    <string name="new_agedamento">Novo agedamento</string>
+    <string name="invalide_date">Data inválida</string>
+    <string name="invalide_hour">Hora inválida</string>
+    <string name="data_before_actual">Data é inferior a atual</string>
+    <string name="selcione_images_do_item">Selecione imagens do item</string>
+    <string name="donativo_information">Informações da Doação</string>
+    <string name="DisponibilidadesForColeta">Disponibilidade para coleta</string>
+    <string name="categoria">Categoria: </string>
+    <string name="disponibilidade_removida">Disponibilidade removida</string>
+    <string name="create_dosponibilidade">Dispobilidade adicionada.</string>
+    <string name="updated_disponibilidade">Disponibilidade atualizada</string>
+    <string name="icon_map">Icone que representa uma localização/endereço</string>
+    <string name="doacao_detail">Detalhes da doação</string>
+    <string name="addres_not_informed">O endereço para a coleta da doação deve ser informado.</string>
+    <string name="removed_image">A imagem foi removida.</string>
+    <string name="endereco_removed">Enderço removido.</string>
+    <string name="endereco_adicionado">Novo endereço adicionado</string>
+    <string name="doacao_save">Sua doação foi realizada com sucesso.</string>
+    <string name="disponibilidade_not_informed">Você deve informar ao menos uma dispobilidade para a coleta</string>
+    <string name="hitQuantidade">Quantidade</string>
+    <string name="msgQuantidadeNotInformed">A quantidade de itens deve ser informada</string>
+    <string name="msgNumberInvalid">Quantidade inválida</string>
+    <string name="msgNotNumber">Número inválido</string>
+    <string name="my_doacoes">Minhas Doações</string>
+    <string name="campanhas_active">Campanhas</string>
+    <string name="btnCancelDoacao">CANCELAR DOAÇÃO</string>
+    <string name="donativo_estado_coleta">Estado da Doação</string>
+    <string name="state_doacao_name">Estado da doação: </string>
+    <string name="no_coletada">Aguadando um mensageiro aceitar coletar doação</string>
+    <string name="imagens_lb">Imagens: </string>
+    <string name="doado_to">Doado para instituição:</string>
+    <string name="doado_to_campanha">Doado para a campanha: </string>
+    <string name="lb_imag_donativo">Imagem do donativo</string>
+    <string name="cancel_doacao">Você deseja realmente cancelar esta doação?</string>
+    <string name="dialog_message">Ao cancelar uma doação, não será mais possível alterá-la</string>
+    <string name="operacao_cancela">Operação cancelada.</string>
+    <string name="doacao_cancelada">Doação cancelada.</string>
+    <string name="nenhumItemCadastrado">Nenhum item disponível</string>
+    <string name="tv_doacao_cancelada_txt">A doação foi cancelada.</string>
+    <string name="disponibilizado">Disponibilizado</string>
+    <string name="add_disponibilidade">ADICINE UMA DISPONIBILIDADE</string>
+    <string name="not_disponibilidade">É necessario informar uma disponibilidade para a coleta</string>
+    <string name="image_logo_desc">Logo  marca do Ajude Mais</string>
+    <string name="disponibilidades">Disponibilidades para coleta</string>
+    <string name="visualizarDisponibilizades">Visualizar disponibilidades</string>
+    <string name="lista_metas">Metas da campanha</string>
+    <string name="mysolicitacoes">Minhas Solicitações de Coleta</string>
+    <string name="aceitarColeta">ACEITAR</string>
+    <string name="recusarColeta">RECUSAR</string>
+    <string name="recolherColeta">COLETA REALIZADA</string>
+    <string name="emped_coleta">COLETA NÃO REALIZADA</string>
+    <string name="confirm_entrega">CONFIRMAR ENTREGA</string>
+    <string name="detalhesColeta">Detalhes da coleta</string>
+    <string name="agedamento_coleta">Agendamento Coleta</string>
+    <string name="call_mensageiro">Deseja ligar para voluntário?</string>
+    <string name="btn_selecionar_horario">SELECIONAR</string>
+    <string name="horarioEscolhidoParaColeta">Horário escolhido</string>
+    <string name="mensageiro_information">Informações do Mensageiro</string>
+    <string name="btnColetar">CONFIRMAR</string>
+    <string name="doador_information">Informações do doador</string>
+    <string name="rejeita_coleta">REJEITAR</string>
+    <string name="call_doador">Deseja ligar para Doador?</string>
+    <string name="confirm_recolhimento">Deseja recolher este donativo?</string>
+    <string name="confirm_n_recolhimento_dialog">Deseja cancelar coleta?</string>
+    <string name="confirm_entrega_dialog">Deseja registrar entrega?</string>
+    <string name="confirm_coleta">CONFIRMAR</string>
+    <string name="SelectHorarioColeta">Selecione um Horário</string>
+    <string name="unique_horario_select">Somente uma disponibilidade deve ser escolhida</string>
+    <string name="horario_not_informed">Uma Disponibilidade para coletar deve ser escolhida</string>
+    <string name="acepted_coleta">Coleta aceita com sucesso.</string>
+    <string name="coleta_recolhida">Donativo coletado com sucesso.</string>
+    <string name="coleta_cancelada">Coleta cancelada com sucesso.</string>
+    <string name="coleta_entregue">Entrega finalizada com sucesso.</string>
+    <string name="solicitacao_not_disponivel">Infelizemente o donativo não está Disponível para ser coletado</string>
+    <string name="not_avaiable_coleta">Coleta não está mais disponível</string>
+    <string name="invalide_coleta">Solicitação indisponível</string>
+    <string name="new_solicitacoes">Novas Solicitações</string>
+    <string name="proximas_coletas">Próximas Coletas</string>
+    <string name="my_coletas">Minhas Coletas</string>
+    <string name="coleta_not_avaible">Infelizmente este item não está mais disponível para ser coletado</string>
+    <string name="recolhimento_not_avaible">Infelizmente, O item não está mais disponível para ser recolhido</string>
+    <string name="not_avaible_cancel">O donativo já foi recolhido. Em caso de dúvida consulte a Institução responsável</string>
+    <string name="not_time_avaiable">Doador não encontrado no endereço informado</string>
+    <string name="not_avaiable_mensageiro">Indisponibilidade na data e horário marcado</string>
+    <string name="not_coleted_other">Outro</string>
+    <string name="SelectMotivoToCanceled">Selecione o Motivo</string>
+    <string name="motivo_not_informed">O motivo do cancelamento deve ser infomado</string>
+    <string name="not_selected_motivo">Selecione um motivo para cancelar a coleta</string>
+    <string name="msg_mensageiro_not_avaible">Infelizmente o voluntário responsável pela coleta ficou indisponível. Sua doação foi disponibilizada novamente.</string>
+    <string name="cancel_doacao_doador_not_was_in_house">Infelizmente o vonlutário responsável pela coleta não encontrou você no endereço informado. Sua doação foi cancelada.</string>
+    <string name="complete_account">Complete as informações</string>
+    <string name="btn_reload">Toque para Recarregar</string>
+
+</resources>

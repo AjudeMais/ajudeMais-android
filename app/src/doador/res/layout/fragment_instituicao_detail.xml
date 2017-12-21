@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="8dp"
+    android:paddingLeft="8dp">
+
+    <TextView
+        android:id="@+id/tv_instituicao_detail_about_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/about_inst"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontDefaultMain"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_campanha_detail_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0.2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="3dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_instituicao_detail_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/fontDefaultSubText" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_instituicao_detail_cont_label"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/contact"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontDefaultMain"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_intituicao_detail_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0.2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="3dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cardview_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="18dp"
+                android:src="@drawable/ic_email"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_instituicao_detail_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="7dp"
+                android:layout_toEndOf="@+id/cardview_email"
+                android:textColor="@color/textSecond"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_intituicao_detail_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="3dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/cardview_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_instituicao_detail_logradouro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/cardview_end"
+                android:paddingBottom="5dp"
+                android:textColor="@color/textSecond"
+                android:textSize="@dimen/fontDefaultMain" />
+
+            <TextView
+                android:id="@+id/tv_instituicao_detail_localidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_instituicao_detail_logradouro"
+                android:layout_toEndOf="@+id/cardview_end"
+                android:textColor="@color/textSecond"
+                android:textSize="@dimen/fontDefaultSubText2" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_list_itens_doaveis"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/lista_de_itens_do_veis"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontDefaultMain"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="2dp"
+        android:visibility="gone"
+        android:scrollbars="vertical"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_no_itens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0.2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="3dp"
+        android:visibility="gone"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_not_itens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nenhumItemCadastrado"
+                android:textSize="@dimen/fontDefaultMain" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loadingPanelMainSearchInst"
+        style="@style/GenericProgressBackground"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/progress_presentation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:indeterminateTintMode="src_atop"
+            android:max="100" />
+    </RelativeLayout>
+
+
+</LinearLayout>

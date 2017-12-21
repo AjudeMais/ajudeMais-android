@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFont"
+    tools:context="br.edu.ifpb.ajudemais.activities.LoginActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFont"
+        android:descendantFocusability="beforeDescendants"
+        android:fillViewport="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/componentLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorFont"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtUserName"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/hitPassword"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imglogin"
+                    android:layout_marginTop="45dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="@string/hitUserName"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/imglogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="25dp"
+                    android:contentDescription="@string/brandLogoApp"
+                    android:src="@drawable/img_login" />
+
+                <Button
+                    android:id="@+id/btnOpen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/edtPassword"
+                    android:layout_marginTop="12dp"
+                    android:height="@dimen/LagHeigth"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/BtnOpenApp"
+                    android:textColor="@color/colorFont"
+                    android:textSize="@dimen/fontLogin" />
+
+
+                <com.facebook.login.widget.LoginButton xmlns:facebook="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/separatorBetweenLoginAndLoginFacebook"
+                    android:layout_marginLeft="@dimen/LagBtnFbRigthAndLeft"
+                    android:layout_marginRight="@dimen/LagBtnFbRigthAndLeft"
+                    android:paddingBottom="@dimen/LagBtnFacebook"
+                    android:paddingTop="@dimen/LagBtnFacebook"
+                    android:textSize="@dimen/fontLogin"
+                    android:text="@string/com_facebook_loginview_log_in_button" />
+
+
+                <TextView
+                    android:id="@+id/separatorBetweenLoginAndLoginFacebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnOpen"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:clickable="true"
+                    android:text="@string/separatorBtnsLogin"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/btnFacebook"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/lbForgotPassword"
+                    android:textAlignment="center" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="@dimen/LagHeigth"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="@string/btnCreateNewAccount"
+                android:textColor="@color/colorFont"
+                android:textSize="@dimen/fontLogin" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#12a7b5</color>
+    <color name="colorPrimaryDark">#0c747e</color>
+    <color name="colorAccent">#E37B7E</color>
+    <color name="colorFont">#FFFF</color>
+    <color name="colorAccent2">#FFFF</color>
+
+    <color name="btnFaceTemp">#3b5998</color>
+    <color name="textPrimary">#424040</color>
+    <color name="textSecond">#665e5e</color>
+    <color name="textSecond2">#acacac</color>
+    <color name="lineSeparator">#d4d3d3</color>
+    <color name="btnTransparente">#f7f6f6</color>
+
+
+    <color name="colorStateDisponibilizado">#f9f168</color>
+    <color name="colorStateCancelaodo">#E37B7E</color>
+    <color name="colorStateNaoAceito">#f4ae5e</color>
+    <color name="colorStateAceito">#789ee1</color>
+    <color name="colorStateRecolhido">#1cf7b1</color>
+    <color name="colorStateRecebido">#93ed69</color>
+    <color name="colorStateEntregue">#7fec97</color>
+
+</resources>

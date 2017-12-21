@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:id="@+id/containerViewSearchDoacoes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view_list_donativos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingTop="2dp"
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+    <include android:id="@+id/no_internet_fragment" layout="@layout/fragment_no_internet"/>
+    <include android:id="@+id/empty_list" layout="@layout/fragment_list_empty"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loadingPanelMainSearchCampanha"
+        style="@style/GenericProgressBackground">
+
+        <ProgressBar
+            android:id="@+id/progress_presentation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:indeterminateTintMode="src_atop"
+            android:max="100" />
+    </RelativeLayout>
+
+
+</LinearLayout>

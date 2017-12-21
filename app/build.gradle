@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        AjudeMais {
+            keyAlias 'ajudemais@tcc'
+            keyPassword 'ajudemais123*'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "br.edu.ifpb.ajudemais"
+        minSdkVersion 21
+        targetSdkVersion 25
+        versionCode 1003
+        versionName "1.2-IT06"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.AjudeMais
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /**
+     * Criando estrutura build de dois apks distintos para perspectiva de doador e outro para perspectiva de mensageiro
+     */
+    productFlavors {
+        doador {
+            applicationId "br.edu.ifpb.ajudemais.doador"
+            applicationIdSuffix ".doador"
+            versionNameSuffix "-doador"
+            testApplicationId 'br.edu.ifpb.ajudemais.doador.teste'
+            versionCode 1003
+            versionName '1.2-IT06'
+        }
+        mensageiro {
+            applicationId "br.edu.ifpb.ajudemais.mensageiro"
+            applicationIdSuffix ".mensageiro"
+            versionNameSuffix "-mensageiro"
+            versionCode 1
+            versionName '1.0-IT06'
+        }
+    }
+    sourceSets {
+        doador { java.srcDirs = ['src/doador/java', 'src/doador/java/'] }
+        mensageiro { java.srcDirs = ['src/mensageiro/java', 'src/mensageiro/java/'] }
+    }
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.0.pr2'
+    compile 'org.apache.commons:commons-io:1.3.2'
+    compile 'com.mobsandgeeks:android-saripaar:2.0.3'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+    compile 'me.drakeet.materialdialog:library:1.2.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.android.support:design:25.0.0'
+    compile 'com.android.support:support-v4:25.0.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.redmadrobot:inputmask:2.2.1'
+    compile 'com.android.support:cardview-v7:25.0.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'com.google.android.gms:play-services-location:10.2.4'
+    compile 'com.github.johnpersano:supertoasts:2.0'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    testCompile 'junit:junit:4.12'
+    doadorCompile'com.facebook.android:facebook-login:[4,5)'
+
+
+}
+
+
+
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

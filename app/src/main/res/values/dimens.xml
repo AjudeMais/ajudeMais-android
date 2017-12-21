@@ -1,0 +1,25 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="activity_horizontal_margin">9dp</dimen>
+    <dimen name="activity_vertical_margin">9dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">100dp</dimen>
+    <dimen name="nav_header_height2">70dp</dimen>
+    <dimen name="fontLogin">18sp</dimen>
+    <dimen name="LagHeigth">60dp</dimen>
+    <dimen name="LagHeigth2">40dp</dimen>
+    <dimen name="LagBtnFacebook">13dp</dimen>
+    <dimen name="LagBtnFbRigthAndLeft">3dp</dimen>
+    <dimen name="fontDefaultMain">18sp</dimen>
+    <dimen name="fontDefaultSubText">16sp</dimen>
+    <dimen name="fontDefaultSubText2">14sp</dimen>
+    <dimen name="fontDefaultSubText3">12sp</dimen>
+    <dimen name="fontDefaultSubText4">10sp</dimen>
+
+
+</resources>

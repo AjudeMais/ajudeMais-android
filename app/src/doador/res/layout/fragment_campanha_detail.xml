@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tv_campanha_detail_about_label"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/about"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/fontDefaultMain"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view_campanha_detail_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0.2dp"
+        card_view:cardElevation="2dp"
+        card_view:cardMaxElevation="3dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/tv_campanha_detail_descricao_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/descricao"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/fontDefaultMain"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_campanha_detail_descricao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/tv_campanha_detail_descricao_label"
+                android:textSize="@dimen/fontDefaultSubText" />
+
+
+            <TextView
+                android:id="@+id/tv_campanha_detail_instituicao_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_campanha_detail_descricao"
+                android:text="@string/instituicaoName"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/fontDefaultMain"/>
+
+            <TextView
+                android:id="@+id/tv_campanha_detail_inst_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/tv_campanha_detail_instituicao_label"
+                android:textSize="@dimen/fontDefaultSubText" />
+
+
+            <TextView
+                android:id="@+id/tv_campanha_detail_term_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_campanha_detail_inst_name"
+                android:text="@string/camapanhaTime"
+                android:fontFamily="sans-serif"
+                android:textSize="@dimen/fontDefaultMain"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_campanha_detail_term"
+                android:layout_width="wrap_content"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_campanha_detail_term_label"
+                android:textSize="@dimen/fontDefaultSubText" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_campanha_metas"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/lista_metas"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/fontDefaultMain"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view_metas_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true" />
+
+
+    <TextView
+        android:id="@+id/tv_campanha_list_itens_doaveis"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/lista_de_itens_do_veis"
+        android:fontFamily="sans-serif"
+        android:textSize="@dimen/fontDefaultMain"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view_campanha_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="true" />
+
+
+</LinearLayout>

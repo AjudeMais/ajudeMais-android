@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ContainerEditDoador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFont">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/detalhesContaDoador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFont"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tv_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hitName"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontDefaultMain" />
+
+        <TextView
+            android:id="@+id/tv_edit_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_nome"
+            android:fontFamily="sans-serif"
+            android:text="@string/hitName"
+            android:textSize="@dimen/fontDefaultSubText" />
+
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_edit_nome"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/hitEmail"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontDefaultMain" />
+
+        <TextView
+            android:id="@+id/tv_edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_email"
+            android:fontFamily="sans-serif"
+            android:text="@string/hitEmail"
+            android:textSize="@dimen/fontDefaultSubText" />
+
+        <TextView
+            android:id="@+id/tv_celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_edit_email"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/hitPhone"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/fontDefaultMain" />
+
+        <TextView
+            android:id="@+id/tv_edit_celular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_celular"
+            android:fontFamily="sans-serif"
+            android:text="@string/hitPhone"
+            android:textSize="@dimen/fontDefaultSubText" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
