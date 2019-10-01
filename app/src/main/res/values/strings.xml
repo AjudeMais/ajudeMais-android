@@ -8,7 +8,7 @@
 
     <string name="title_activity_teste">Teste</string>
     <string name="userNameTemp">Nome do Usuário</string>
-    <string name="userMailTemp">example@gmail.com</string>
+    <string name="userMailTemp">myemail@gmail.com</string>
     <string name="profileDescription">Foto do Perfil</string>
 
 
@@ -100,7 +100,6 @@
     <string name="updatedImage">Imagem Atualizada atualizada com sucesso.</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hitEnderecos">Endereços</string>
     <string name="btn_cadastrar_endereco">Adicionar</string>
     <string name="hitCep">CEP</string>
